@@ -1,5 +1,7 @@
-<div class="column">
-<h2 class="title pb-4">login:</h2><hr>
+ <div class="mainl">
+        <div class="containerl">
+            <div id="square">
+                <div class="front">
 <form class="login-form">
   <div>
     <label for="email-login">email:</label>
@@ -11,10 +13,64 @@
   </div>
   <div>
     <button type="submit" class="button is-primary">login</button>
-    <a href="/signup"><button type="button" class="button is-danger">signup</button></a>
+    {{!-- <a href="/signup"><button type="button" class="button is-danger">signup</button></a> --}}
   </div>
 </form>
 </div>
+ <div class="right">
+                    {{!-- <h1>Create a new account</h1> --}}
+                   <form class="signup-form">
+                        <div>
+    <label for="username-signup">username:</label>
+    <input type="text" id="username-signup" />
+  </div>
+  <div>
+    <label for="email-signup">email:</label>
+    <input type="text" id="email-signup" />
+  </div>
+  <div>
+    <label for="password-signup">password:</label>
+    <input type="password" id="password-signup" />
+  </div>
+  <div>
+    <button type="submit" class="button is-primary">signup</button>
+  </div>
+                    </form>
+                </div>
+            </div>
+            <div class="actions">
+               
+                <button id="frontSide" type="button" class="button is-primary">Login</button>
+                <button id="rightSide" type="button" class="button is-primary">Sign up</button>
+            </div>
+</div>
+</div>
+</div> 
+
+{{!-- <div class="column">
+<h2 class="title pb-4">create new account:</h2><hr>
+<form class="signup-form">
+  <div>
+    <label for="username-signup">username:</label>
+    <input type="text" id="username-signup" />
+  </div>
+  <div>
+    <label for="email-signup">email:</label>
+    <input type="text" id="email-signup" />
+  </div>
+  <div>
+    <label for="password-signup">password:</label>
+    <input type="password" id="password-signup" />
+  </div>
+  <div>
+    <button type="submit" class="button is-primary">signup</button>
+  </div>
+</form>
+</div> --}}
 
 
-<script src="/javascript/login.js"></script>
+
+
+  <script src="/javascript/login.js"></script>
+  <script src="/javascript/signup.js"></script>
+     <script src="/javascript/transform.js"></script>

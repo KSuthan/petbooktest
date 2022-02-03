@@ -8,6 +8,7 @@
     margin: 0;
     font-family: sans-serif;
     color: #333;
+    background-color: #a8a4a4;
   }
   
   a {
@@ -197,3 +198,141 @@
   padding: 15px;
   border-radius: 4px;
 }
+
+.mainl {
+ 
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  color: aliceblue;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+ 
+}
+
+.containerl {
+  margin-left: 200px;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  /* margin: 0 auto; */
+  border-radius: 5px 100px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#square {
+
+  display: flex;
+  min-width: 400px;
+  min-height: 400px;
+  /* margin-bottom: 100px; */
+  justify-content: center;
+  transform-style: preserve-3d;
+  transition: all 0.3s ease-in;
+  box-shadow: 3px 3px 5px #012a4a;
+}
+
+.front,
+.right{
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  display: flex;
+  border-radius: 5px;
+  position: absolute;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #331212;
+  box-shadow: 3px 3px 5px #012a4a;
+}
+
+/* .front {
+  transform: translateZ(50px);
+} */
+
+.right {
+  transform: rotateY(90deg) translateZ(50px);
+}
+
+/* .left {
+  transform: rotateY(-90deg) translateZ(50px);
+} */
+
+.actions button {
+  border: 0;
+  outline: none;
+  font-size: 20px;
+  min-height: 30px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  background-color: grey;
+}
+
+/* .container h1 {
+  font-size: 35px;
+  margin-bottom: 15px;
+} */
+
+.containerl form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.containerl form input,
+.containerl form button,
+.containerl form h5 {
+  margin-bottom: 15px;
+}
+
+.containerl form input {
+  border: 0;
+  padding: 10px 8px;
+  min-height: 40px;
+  font-size: 20px;
+  border-radius: 4px;
+  box-sizing: border-box;
+ 
+}
+
+.containerl form button {
+  border: 0;
+  padding: 10px ;
+  outline: none;
+  min-height: 30px;
+  font-size: 20px;
+  border-radius: 4px;
+  background-color: grey;
+  margin-left: 20px;
+}
+
+#frontSide {
+  display: none;
+  margin-top: 20px;
+}
+
+#rightSide{
+  margin-top: 20px;
+}
+.containerl .actions {
+  display: flex;
+}
+
+.containerl .actions button {
+  margin-right: 10px;
+}
+
+@media (min-width: 600px) {
+  .containerl {
+      width: 550px;
+      padding: 50px 100px;
+      height: 550px;
+      background-image: linear-gradient(to top, #9e9d9d, #757070, #3a0b08);
+  }
+} 
