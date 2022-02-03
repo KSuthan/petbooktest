@@ -1,3 +1,3 @@
-DROP DATABASE IF EXISTS petest_db;
+DROP DATABASE IF EXISTS pettest_db;
 
 CREATE DATABASE pettest_db;
